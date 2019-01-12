@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  font-family: 'Courier New', sans-serif;
+}
+
+#target {
+  border: 2px dashed #ccc;
+  margin: 50px;
+  color: #ccc;
+  cursor: pointer;
+  line-height: 1.5em;
+  padding: 1.5em;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.new_image img {
+  margin: 50px;
+  max-width: 50%;
+}
+
+.image img, #upload, #parameterControls {
+  display: none;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 50px;
+}
+
+.colors span{
+  width: 33.33%;
+}
