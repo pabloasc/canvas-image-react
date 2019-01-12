@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Inside the newly created project, you can run some built-in commands:
+## Instructions
 
 ### `npm start` or `yarn start`
 
@@ -26,7 +26,7 @@ The build is minified and the filenames include the hashes.<br>
 
 Your app is ready to be deployed.
 
-Fur further informatio, follow the instructions on the React Create App Repository to get it up and running.
+For further information, follow the instructions on the React Create App repository[repository](https://github.com/facebook/create-react-app).
 
 ## What I want to build
 Basic React Project for image processing.
