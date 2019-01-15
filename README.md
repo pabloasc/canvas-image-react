@@ -29,7 +29,7 @@ Your app is ready to be deployed.
 For further information, follow the instructions on the React Create App repository[repository](https://github.com/facebook/create-react-app).
 
 ## What I want to build
-Basic React Project for image processing.
+Basic React Project for image processing. This example allows a user to reduce an image in 3 or 2 colors and replace each area by a new custom color.
 
 ## Screenshot
 ![Screenshot](screenshot.png)
