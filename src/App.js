@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Results from './Results';
-import * as imageBlast from './lib/image-blast.js'
+import * as imageBlast from './lib/image-process.js'
 import InputRange from 'react-input-range';
 import './App.css';
 import 'react-input-range/lib/css/index.css';
@@ -60,10 +60,10 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>Edit image with Canvas</h1>
+          <h1>Process image with Canvas</h1>
         </header>
         <content>
-          <p>Basic React Project for image processing.</p>
+          <p>Basic React Project for image processing, this example allows a user to reduce an image in 3 or 2 colors and replace each area by a new custom color.</p>
           <div id="target" onClick={this.clickTarget} onDragOver={this.targetDivDragOver} onDrop={this.targetDivDrop}>
             Drop an image here (or click to upload)
             <input type="file" id="upload" ref={this.uploadInput} onChange={this.triggerUploadInput} />

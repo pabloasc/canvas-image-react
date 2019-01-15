@@ -4,8 +4,8 @@ import './Results.css';
 class Results extends Component {
   render() {
     return (
-      <div className="new_image">
-        <img id="edited_image" />
+      <div className="Results" id="results">
+        <img alt="Edited Image" id="edited_image" />
       </div>
     );
   }

@@ -14,6 +14,7 @@ export function addImage(file, settings) {
     img.onload = function() {
       this.processImage(settings);
       document.getElementById('parameterControls').style.display = 'block';
+      document.getElementById('results').style.display = 'block';
     }.bind(this);
     document.getElementById('image').appendChild(element);
   }
@@ -22,8 +23,6 @@ export function addImage(file, settings) {
 
 
 export function processImage(settings) {
-  console.log(settings);
-
   var canvas = document.createElement('canvas');
   var ctx = canvas.getContext('2d');
   var image = document.getElementById('loadedImage');
@@ -34,8 +33,6 @@ export function processImage(settings) {
   var thirdColorRGB = convertHex(settings.thirdColor);
 
   ctx.drawImage(image, 0, 0);
-
-  var editedImage = image;
 
   var imageData = ctx.getImageData(0, 0, width, height);
   var editedImageData = imageData;
@@ -76,7 +73,7 @@ export function processImage(settings) {
 }
 
 function convertHex(hex){
-    hex = hex.replace('#','');
-    return { r: parseInt(hex.substring(0,2), 16), g: parseInt(hex.substring(2,4), 16), b: parseInt(hex.substring(4,6), 16) };
+  hex = hex.replace('#','');
+  return { r: parseInt(hex.substring(0,2), 16), g: parseInt(hex.substring(2,4), 16), b: parseInt(hex.substring(4,6), 16) };
 }
 

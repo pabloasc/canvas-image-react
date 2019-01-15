@@ -3,6 +3,10 @@
   font-family: 'Courier New', sans-serif;
 }
 
+p {
+  margin: 50px;
+}
+
 #target {
   border: 2px dashed #ccc;
   margin: 50px;
@@ -17,12 +21,12 @@
   user-select: none;
 }
 
-.new_image img {
+.image img, .Results img {
   margin: 50px;
   max-width: 50%;
 }
 
-.image img, #upload, #parameterControls {
+#upload, #parameterControls {
   display: none;
 }
 
